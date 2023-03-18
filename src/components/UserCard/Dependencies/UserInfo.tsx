@@ -14,18 +14,18 @@ const UserInfo = ({ blog, company, location, twitter }: UserInfoProps) => {
     <div className="flex w-full justify-between px-4 sm:justify-start sm:gap-20">
       <div className="flex flex-col gap-4 text-left">
         <InfoItem text={blog} isLink Link={`http://${blog}`}>
-          <BlogIcon className="mr-6 w-6 fill-blue-400" />
+          <BlogIcon className="mr-2 w-6 fill-blue-400 md:mr-6" />
         </InfoItem>
         <InfoItem text={company}>
-          <CompanyIcon className="mr-6 w-6 fill-blue-400" />
+          <CompanyIcon className="mr-2 w-6 fill-blue-400 md:mr-6" />
         </InfoItem>
       </div>
       <div className="flex flex-col gap-4">
         <InfoItem text={location}>
-          <LocationIcon className="mr-6 w-6 fill-blue-400" />
+          <LocationIcon className="mr-2 w-6 fill-blue-400 md:mr-6" />
         </InfoItem>
         <InfoItem text={twitter} isLink Link={`https://twitter.com/${twitter}`}>
-          <TwitterIcon className="mr-6 w-6 fill-blue-400" />
+          <TwitterIcon className="mr-2 w-6 fill-blue-400 md:mr-6" />
         </InfoItem>
       </div>
     </div>
